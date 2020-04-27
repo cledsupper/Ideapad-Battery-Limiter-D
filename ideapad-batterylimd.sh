@@ -1,8 +1,10 @@
 #!/usr/bin/bash
 
+# Ideapad Battery Limiter D
 # Author: Cledson F. Cavalcanti (cledsonitgames@gmail.com)
 # Version: 0.1
 # Description: this program limit a Ideapad's battery charge level to 80%.
+# Tested on Ideapad 320-15IAP only.
 
 readonly PROG_VERSION="0.1"
 
@@ -44,7 +46,7 @@ readonly LEVEL_MAX=79
 # Ideapad Battery Limiter daemon
 echo "Ledso's Ideapad Battery Limiter"
 echo "Version $PROG_VERSION"
-echo "This daemon is based on work of Lenovsky (github.com/Lenovsky)"
+echo "This script is based on work of Lenovsky (github.com/Lenovsky)"
 
 while [ $? -eq 0 ]; do
   level=$(cat $BATT_LEVEL)
