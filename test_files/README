@@ -1,0 +1,29 @@
+Files here exist for "emulating" the work of Ledso's Ideapad Battery Limiter (BatteryLimD), since we are dealing with hardware settings.
+
+* 'capacity' refers to: /sys/class/power_supply/<main_battery>/capacity
+* 'conservation_mode': /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+'capacity'
+File content is always an integral number representing battery energy level.
+File content example for 99% of battery energy level:
+	| 99
+	|
+
+Of course, the default file (capacity) is only for reading. We only change the emulated file (batt_level) for testing BatteryLimD.
+
+
+'conservation_mode'
+File content must be 1 or 0, meaning CONSERVATION_MODE_ON and CONSERVATION_MODE_OFF:
+CONSERVATION_MODE_ON:	| 1
+			|
+
+CONSERVATION_MODE_OFF:	| 0
+			|
+
+It can be set via 'echo' command from BASH, for example:
+	# echo "1" > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+Or:
+	# echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
+
+When setting to CONSERVATION_MODE_ON while battery charging above 60%, battery is imediately
+
