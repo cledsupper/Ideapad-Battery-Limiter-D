@@ -1,7 +1,7 @@
 # Ideapad Battery Limiter D
 ## A customizable Ideapad 320 battery charge limiter
 
-I do not recommend or endorse the use of this script on any other device, even if it is the same model as my notebook.
+I do not recommend or endorse the use of this script on any other device, even if it is the same model as my Ideapad.
 
 Use at your own risk!
 
