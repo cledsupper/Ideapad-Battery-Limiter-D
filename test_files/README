@@ -25,5 +25,4 @@ It can be set via 'echo' command from BASH, for example:
 Or:
 	# echo 1 > /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode
 
-When setting to CONSERVATION_MODE_ON while battery charging above 60%, battery is imediately
-
+When setting to CONSERVATION_MODE_ON while battery charging above 60%, battery charge is imediately stopped.
