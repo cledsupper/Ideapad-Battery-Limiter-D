@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 
 # Ideapad Battery Limiter D
 # Author: Cledson F. Cavalcanti (cledsonitgames@gmail.com)
